@@ -1,0 +1,175 @@
+:root {
+    --background-color: white ;
+    --text-color: black;
+    --link-color: black;
+    --link-hover-color: #777777;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --projects-background: white;
+    --projects-text: black;
+    --projects-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+body.dark-theme {
+    --background-color: black;
+    --text-color: #efefec;
+    --link-color: white;
+    --link-hover-color: #777777;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --projects-background: #333b3c;
+    --projects-text: white;
+    --projects-shadow: rgba(0, 0, 0, 0.1);
+    --welcome-section-background: #333b3c;
+    --footer-background: #333b3c;
+    --theme-button-background: white;
+    --theme-button-color: #777777;
+}
+
+/* Light mode */
+body.light-theme #themeButton{
+    --background-color: white;
+    --text-color: #777777;
+    --link-color: #777777;
+    --link-hover-color: #777777;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --projects-background: white;
+    --theme-button-background: #777777;
+    --projects-text: #777777;
+    --theme-button-background: white;
+    --theme-button-color: #777777;;
+    --projects-shadow: rgba(0, 0, 0, 0.1);
+    --theme-button-background: #777777;
+    --theme-button-color: white;
+    
+}
+
+/* Other styles remain unchanged */
+header {
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+    font-family: monospace;
+}
+
+.themeButton {
+    background-color: #777777 white;
+    color: white #777777 ;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: monospace;
+    border-radius: 25px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#welcome-section {
+    padding: 50px 20px;
+    text-align: center;  
+    font-family: monospace;
+}
+
+#my-name {
+    color: var(--text-color);
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+#dev {
+    color: var(--text-color);
+    font-family: monospace;
+    font-weight: lighter;
+    animation: typing 3s steps(21, end) forwards, blinking .8s infinite;
+    font-size: 16px; /* Original font size */
+    letter-spacing: normal;
+    margin: 0 auto;
+    white-space: nowrap;
+    border-right: 2px solid var(--text-color) /* Added border for blinking effect */;
+    overflow: hidden;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinking {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: white black; }
+}
+
+/* Apply the variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: monospace, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+nav a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: monospace;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+}
+
+.project {
+    background: var(--projects-background);
+    color: var(--projects-text);
+    box-shadow: 0 2px 5px var(--projects-shadow);
+    border-radius: 5px;
+    display:inline-table;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+#projects {
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    animation-duration: 3s;
+    animation-name: slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--text-color);
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
