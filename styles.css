@@ -43,7 +43,7 @@ body.light-theme #themeButton{
     
 }
 
-/* Other styles remain unchanged */
+
 header {
     color: whitesmoke;
     padding: 20px 0;
@@ -62,8 +62,6 @@ header {
     font-family: monospace;
     border-radius: 25px;
 }
-
-
 
 nav ul {
     list-style: none;
@@ -143,7 +141,6 @@ nav a:hover {
     margin: 10px;
     padding: 20px;
 }
-
 
 #projects {
     padding: 20px;
